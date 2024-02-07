@@ -28,6 +28,7 @@ void print_triangle(int leftCol, int size)
 
 void print_arrow(int leftCol, int size){
   putchar('e');
+  putchar('a');
   putchar('u');
   putchar('\n');
 }
