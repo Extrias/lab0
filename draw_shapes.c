@@ -39,5 +39,17 @@ void print_arrow(int leftCol, int size){
     }
     putchar('\n');
   }
+  int i, j;
+  int endCol = leftCol + size;
+  for(int row = 0; row < size; row++){
+    int col;
+    for(col = 0; col < leftCol+4; col++){
+      putchar(' ');
+    }
+    for(       ; col < endCol+4; col++){
+      putchar('*');
+    }
+    putchar('\n');
+  }
 }
 
