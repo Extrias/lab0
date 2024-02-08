@@ -27,9 +27,17 @@ void print_triangle(int leftCol, int size)
 }
 
 void print_arrow(int leftCol, int size){
-  putchar('e');
-  putchar('a');
-  putchar('u');
-  putchar('\n');
+  for(int row = 0; row <= size; row++){
+    int minCol = leftCol + size - row;
+    int maxCol = leftCol + size + row;
+    int col;
+    for(col = 0; col < minCol; col++){
+      putchar(' ');
+    }
+    for( ; col <= maxCol; col++){
+      putchar('*');
+    }
+    putchar('\n');
+  }
 }
 
